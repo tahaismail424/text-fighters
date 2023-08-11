@@ -19,7 +19,7 @@ var app = express();
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb+srv://tahasmool:JPTMQgax0FWvXGFB@text-fighters-data.adqktpu.mongodb.net/?retryWrites=true&w=majority';
+var mongoDB;
 mongoose.connect(mongoDB, { useNewUrlParser: 
   true, useUnifiedTopology: true});
   var db = mongoose.connection;
